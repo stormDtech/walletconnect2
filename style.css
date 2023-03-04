@@ -35,11 +35,15 @@ body{
 }
 
 .navbar_link{
-    font-size: 1.8rem;
+    font-size: 2rem;
    text-decoration:none;
-   padding: 0 11rem;
+   padding: 0 10rem;
    color:#c0e6f0;
    transition: all 0.4s;
+}
+
+.navbar_links{
+	font-size: 2rem;
 }
 
 .navbar_link:hover{
@@ -54,43 +58,32 @@ body{
 My Hero section
 ***************/
 
-.hero-section{
-	display: flex;
-	align-items: center;
-	gap:10rem;
-	padding: 5rem 2;
-}
-
-.hero-text{
-	max-width: 40%;
-}
-
- .h2{
-	padding: 4rem 0;
-	color: #c0e6f0;
-	text-align: center;
-}
-
-.hero-text p{
-	color: white;
-	font-size: 1.4rem;
-	line-height: 2rem;
-	margin-bottom: 2.5rem;
-	max-width: 100%;
-}
-
 .hero-img{
-	max-width: 100%;
-	width: 90%;
-	padding:  0;
+	text-align: center;
+	width: 100%;
 }
 
 .hero-img img{
 	display: inline-block;
-	width: 100%;
-	border-radius: 0.8rem;
-	box-shadow: 2px 5px 15px 0 gray;
-	align-self: flex-end;
+	width: 50%;
+}
+
+.hero-text{
+	max-width: 100%;
+}
+
+.hero-text p{
+	color: white;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	margin-bottom: 2.5rem;
+	max-width: 100%;
+} 
+
+.h2{
+	padding: 4rem 0;
+	color: #c0e6f0;
+	text-align: center;
 }
 
 .cta-div{
@@ -125,16 +118,16 @@ hr {
 
 .center-img{
 	max-width: 50%;
-	width: 40%;
 }
 
 .center-img img{
-	width:90%;
+	width:100%;
 	border-radius: 10px; 
-	box-shadow: 2px 7px 12px 2px gray; 
+	box-shadow: 2px 7px 2px 2px gray; 
 	object-fit: cover;
 	align-self: flex-end;
 	display: inline-block;
+	margin-top: 3rem;
 }
 
 .center-img p{
@@ -148,8 +141,7 @@ hr {
 }
 
 .center-text{
-	max-width: 40%;
-	font-size: 1.7rem;
+	max-width: 50%;
 }
 
 .center-text p{
@@ -203,17 +195,26 @@ p{
 
 .article-roll{
 	background-color: white;
-	padding: 20px;
+	padding: 3rem 1rem;
+}
+
+.article-roll p{
+	padding: 2 2rem;
+	font-size: 1.4rem;
 }
 
 .article-roll strong{
-	padding: 1rem 0;
+	padding: 2rem 0;
 	color: black;
 }
 
 .article-roll a{
 	color: blue;
 	text-decoration: none;
+}
+
+.article-text{
+	padding: 2rem;
 }
 img{
 	width: 30%;
@@ -229,7 +230,7 @@ img{
 
 .element img{
 	padding: 3rem 2rem;
-	width: 10%;
+	width: 100%;
 }
 
 .gird-container{
@@ -318,21 +319,23 @@ img{
 	}
 
 	.center-img p{
-		padding: 3rem 0;
-		font-size: 4.2rem;
-		line-height: 4.5rem;
+		padding: 1.3rem 0;
+		line-height: 1.5rem;
+	}
+
+	.center-text p{
 	}
 
 	.grid-item img{
-		width: 45%;
+		width: 40.7%;
 	}
 
 	.grid-item a{
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 }
 
-@media only screen and (max-width: 1036px){
+@media only screen and (max-width: 1038px){
 .navbar_link{
    padding: 1rem 4rem;
    font-size: 2rem;
@@ -343,23 +346,28 @@ img{
 	width: 10.9%;
 }
 
+
+.center-img p{
+	padding: 1.5rem 0;
+	line-height: 1.9rem;
+}
+
+.center-text p{
+	
+}
 .hero_text{
-	padding: 0;
-	max-width: 100%;
+	padding: 2rem 0;
+	width: 100%;
 }
 
 .hero_img{
 	max-width: 100%;
-	width: 100%;
-	justify-content: flex-end;
+	text-align: center;
 	margin: 0;
 }
 
 .hero-img img{
-	display: inline-block;
-	width: 100%;
-	border-radius: 1rem;
-	box-shadow: 2px 5px 15px 0 gray;
+	width: 50%;
 	margin: 0;
 }
 
@@ -372,6 +380,10 @@ img{
 
 .navbar_links{
 	display: none;
+}
+
+.navbar_link{
+	font-size: 2.5rem;
 }
 .hero_section{
 	flex-shrink: inherit;
@@ -389,8 +401,7 @@ img{
 	display: inline-block;
 	width: 100%;
 	border-radius: 1rem;
-	box-shadow: 2px 5px 15px 0 gray;
-	margin: 0;
+	box-shadow: 2px 5px 15px 0 gray	margin: 0;
 }
 
 .center-wrapper{
