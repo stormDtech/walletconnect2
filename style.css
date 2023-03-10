@@ -9,7 +9,7 @@ html{
 }
 
 body{
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	color: black;
 	background-color: #203354;
 	max-width: 1240px;
@@ -23,7 +23,7 @@ body{
 
 .navbar{
 	display: flex;
-	padding: 0 2rem;
+	padding: 0;
 	text-align: center;
 }
 
@@ -35,20 +35,15 @@ body{
 }
 
 .navbar_link{
-    font-size: 2rem;
    text-decoration:none;
-   padding: 0 10rem;
+   padding: 0 9rem;
    color:#c0e6f0;
    transition: all 0.4s;
 }
 
-.navbar_links{
-	font-size: 2rem;
-}
-
 .navbar_link:hover{
  background-color: #c0e6f0;
- padding: 1rem 3rem;
+ padding: 1rem 2rem;
  color: black;
  border-radius: 0.8rem;
 }
@@ -66,6 +61,7 @@ My Hero section
 .hero-img img{
 	display: inline-block;
 	width: 50%;
+	border-radius: 1.2rem;
 }
 
 .hero-text{
@@ -74,9 +70,8 @@ My Hero section
 
 .hero-text p{
 	color: white;
-	font-size: 1.3rem;
-	line-height: 2rem;
-	margin-bottom: 2.5rem;
+	line-height: 1.6rem;
+	margin-bottom: 2rem;
 	max-width: 100%;
 } 
 
@@ -223,7 +218,6 @@ img{
 	background-color: white;
 	border:1px solid grey (0,0,0, 0.8)
 	padding: 40px;
-	font-size: 20px;
 	text-align: center;
 }
 
@@ -270,7 +264,6 @@ img{
 }
 
 .div-footer a{
-	font-size: 1.4rem;
 	text-decoration: none;
 	color: #ddd;
 	cursor: pointer;
@@ -284,23 +277,22 @@ img{
 	.navbar_link{
 		padding: 1rem 4rem;
 	}
+
+	.navbar-links{
+		text-align: center;
+	}
 	.wrapper{
 		padding:0 2rem;
 		max-width: 1240px;
 	}
 
-	.footer{
-		font-size: 1.2rem;
-	}
-
 	.div-connet{
-		font-size: 1.3rem;
 		padding: 1rem 1rem;
 	}
 
 	.center-img p{
 		padding: 1.3rem 2rem;
-		line-height: 1.5rem;
+		line-height: 1.2rem;
 	}
 
 	.center-text p{
@@ -311,7 +303,7 @@ img{
 	}
 
 	.grid-item a{
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 }
 
@@ -351,6 +343,10 @@ img{
 	margin: 0;
 }
 
+.footer{
+	font-size: 1.1rem;
+}
+
 
 @media only screen and (max-width: 550px){
 .hero-section{
@@ -358,30 +354,10 @@ img{
 	flex-direction: column;
 }
 
-.navbar_links{
-	display: none;
-}
-
-.navbar_link{
-	font-size: 2.5rem;
-}
 .hero_section{
 	flex-shrink: inherit;
 	flex-grow: inherit;
 	flex-basis: 100px;
-}
-.hero_img{
-	max-width: 100%;
-	width: 100%;
-	justify-content: flex-end;
-	margin: 0;
-}
-
-.hero-img img{
-	display: inline-block;
-	width: 100%;
-	border-radius: 1rem;
-	box-shadow: 2px 5px 15px 0 gray	margin: 0;
 }
 
 .footer{
